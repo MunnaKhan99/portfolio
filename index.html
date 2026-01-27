@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            background-color: #0E1111;
+            color: #E5E7EB;
+        }
+
+        /* hide scrollbar but keep scroll */
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .gradint-color {
+            background: linear-gradient(to right, #F5BD4D, #F89222);
+        }
+
+        .gradint-text {
+            background: linear-gradient(to right, #F5BD4D, #F89222);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR (FULL WIDTH) ================= -->
+    <header class="fixed top-0 left-0 w-full z-40
+  bg-[#141717]/95 backdrop-blur
+  border-b border-[#1F2933]">
+
+        <div class="h-14 md:h-16 flex items-center">
+
+            <!-- LEFT : Name block (desktop only) -->
+            <div class="hidden lg:flex w-80 h-full pl-24
+      flex-col justify-center
+      border-r border-[#1F2933]">
+                <h2 class="text-lg font-bold leading-none">
+                    Daryl <span class="gradint-text">Smith</span>
+                </h2>
+                <p class="text-xs text-[#9CA3AF] mt-1">UI/UX designer</p>
+            </div>
+
+            <!-- CENTER / RIGHT -->
+            <div class="flex-1 h-full flex items-center justify-between px-4 md:px-6 lg:px-8">
+
+                <!-- Mobile name -->
+                <div class="lg:hidden">
+                    <h2 class="text-sm font-semibold">
+                        Daryl <span class="text-[#F5A623]">Smith</span>
+                    </h2>
+                    <p class="text-[10px] text-[#9CA3AF]">UI/UX designer</p>
+                </div>
+
+                <!-- Page title (tablet+) -->
+                <div class="hidden md:flex items-center gap-3">
+                    <span class="w-9 h-9 gradint-color
+          flex items-center justify-center
+          rounded-lg">
+                        <img src="./assets/homewhite.png" alt="Home" class="w-4 h-4">
+                    </span>
+                    <span class="font-medium text-base">Home</span>
+                </div>
+
+                <!-- CTA -->
+                <a href="#contact" class="border border-[#F5A623]
+        gradint-text
+        px-4 md:px-6 py-1.5 md:py-2
+        rounded-full text-xs md:text-sm
+        hover:bg-[#F5A623]
+        transition">
+                    Talk To Me
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ================= LEFT ASIDE ================= -->
+    <aside class="fixed left-0 top-16 h-[calc(100vh-4rem)] w-80 hidden lg:flex z-30">
+
+        <!-- ICON NAV -->
+        <nav class="relative w-16 h-full bg-[#171B1A]
+           border-r border-[#1F2933]
+           flex flex-col items-center py-8 overflow-hidden">
+
+            <!-- ICONS -->
+            <div class="relative z-10 flex-1 flex flex-col gap-6 justify-center items-center">
+                <a href="#home"><img src="./assets/home (1).png" /></a>
+                <a href="#resume"><img src="./assets/about.png" /></a>
+                <a href="#work-history"><img src="./assets/briefcase (Traced).png" /></a>
+                <a href="#portfolio"><img src="./assets/blog.png" /></a>
+                <a href="#contact"><img src="./assets/blog (1).png" /></a>
+            </div>
+
+            <!-- BOTTOM BG -->
+            <div class="absolute bottom-0 left-0 w-full h-1/2
+             bg-no-repeat bg-bottom bg-cover
+             pointer-events-none" style="background-image: url('./assets/rectangle-b.png');">
+            </div>
+        </nav>
+
+        <!-- PROFILE AREA -->
+        <div class="relative flex-1 bg-black flex items-center justify-center">
+
+            <!-- IMAGE WRAPPER -->
+            <div class="relative flex flex-col items-center">
+
+                <!-- PROFILE IMAGE -->
+                <div class="w-64 h-[360px] overflow-hidden bg-[]">
+                    <img src="./assets/handsome-young-man-with-new-stylish-haircut 1.png"
+                        class="w-full h-full object-cover object-top" />
+                </div>
+
+                <!-- SOCIAL ICONS (attached under image) -->
+                <div class="bottom-6 flex gap-3 px-4 py-2">
+
+                    <span class="w-7 h-7 rounded-full border  bg-[#1F2933]
+                 flex items-center justify-center text-[#9CA3AF] text-xs">
+                        f
+                    </span>
+                    <span class="w-7 h-7 rounded-full border bg-[#1F2933]
+                 flex items-center justify-center text-[#9CA3AF] text-xs">
+                        in
+                    </span>
+                    <span class="w-7 h-7 rounded-full border bg-[#1F2933]
+                 flex items-center justify-center text-[#9CA3AF] text-xs">
+                        ig
+                    </span>
+                </div>
+
+            </div>
+        </div>
+
+    </aside>
+
+
+    <!-- ================= RIGHT ASIDE ================= -->
+    <aside class="fixed right-0 top-16 h-[calc(100vh-4rem)] w-16 hidden lg:flex z-30
+           bg-[#0B0E0E] border-l border-[#1F2933]
+           flex-col items-center justify-between py-8">
+
+        <div class="flex-1 flex items-center">
+            <p class="text-xs text-[#6B7280] rotate-180" style="writing-mode: vertical-rl;">
+                © design by themefisher developed by gethugthemes
+            </p>
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <button class="w-8 h-8 rounded-full border border-[#1F2933] text-xs text-[#9CA3AF]">Fr</button>
+            <button class="w-8 h-8 rounded-full bg-[#F5A623] text-black text-xs font-semibold">En</button>
+        </div>
+
+    </aside>
+
+   
+
+</body>
+
+</html>

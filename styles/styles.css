@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* ১. ব্যাকগ্রাউন্ড ইমেজ সেট করা */
+    background-image: url('../assets/_Group_.png');
+    /* আপনার ব্যাকগ্রাউন্ড ইমেজের পাথ এখানে দিন */
+    border: 1px solid tomato;
+   background-repeat: repeat;
+    
+    /* স্ক্রল করার সময় ব্যাকগ্রাউন্ড যেন স্থির থাকে (ঐচ্ছিক) */
+    background-attachment: fixed;
+    
+    /* ইমেজের সাইজ প্রয়োজন অনুযায়ী ছোট-বড় করতে পারেন */
+    background-size: screen; 
+    
+    /* ইমেজ লোড না হওয়া পর্যন্ত একটি কালার দেখা যাবে */
+    /* background-color: #121212;  */
+    
+    margin: 0;
+    padding: 0;
+}
+
+/*  */
