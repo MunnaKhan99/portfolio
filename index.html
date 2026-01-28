@@ -159,27 +159,60 @@
            relative z-10">
 
         <!-- HERO -->
-        <section id="home" class="px-8 py-4 max-w-3xl">
-            <span class="gradint-text  text-3xl font-bold uppercase tracking-wider">Introduction</span>
-            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mt-4 mb-6">
-                I'm a Creative Developer & UI/UX Design Expert
-            </h1>
-            <h1 class="font-bold text-[#e0e2e4] leading-relaxed mb-8">
-                24 years / Robert Smith / UK London
-            </h1>
-            <p class="text-[#9CA3AF] leading-relaxed mb-8">Prolific, full stack web developer with a passion for metrics
-                and beating former
-                "best-yets. Prototyped 25 new product features per year for Flexor, Inc.
-                Decreased rework by 22% and costs by 15%. Consistently receive high
-                user experience scores for all web development projects, including a
-                55% increase for Flexor, Inc. Passionate about building world class web
-                applications. One of my sites received a 2020 Webby for Best
-                Navigation and Structure.</p>
-            <button class=" btn px-8 py-3 rounded-full
+        <section id="home" class="px-8 py-4 max-w-5xl
+           flex flex-col
+           md:flex-row md:items-center md:gap-8">
+
+            <!-- TEXT CONTENT -->
+            <div class="flex-1">
+
+                <span class="gradint-text text-3xl font-bold uppercase tracking-wider">
+                    Introduction
+                </span>
+
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mt-4 mb-6">
+                    I'm a Creative Developer & UI/UX Design Expert
+                </h1>
+
+                <h1 class="font-bold text-[#e0e2e4] leading-relaxed mb-8">
+                    24 years / Robert Smith / UK London
+                </h1>
+
+                <p class="text-[#9CA3AF] leading-relaxed mb-8">
+                    Prolific, full stack web developer with a passion for metrics and beating former
+                    "best-yets. Prototyped 25 new product features per year for Flexor, Inc.
+                    Decreased rework by 22% and costs by 15%.
+                </p>
+
+                <button class="px-8 py-3 rounded-full
                font-semibold gradint-color transition flex gap-3">
-                Download CV <span><img src="/assets/download.png" alt=""></span>
-            </button>
+                    Download CV
+                    <span><img src="/assets/download.png" alt=""></span>
+                </button>
+            </div>
+
+            <!-- PROFILE IMAGE -->
+            <!-- PROFILE IMAGE -->
+            <div class="mb-6 md:mb-0
+         md:w-56
+         order-first md:order-last
+         lg:hidden">
+
+                <div class="p-2 rounded-2xl
+              bg-[#141717]
+              border border-[#1F2933]
+              shadow-[0_20px_40px_rgba(0,0,0,0.6)]">
+
+                    <img src="./assets/handsome-young-man-with-new-stylish-haircut 1.png" class="w-full h-auto
+                rounded-xl
+                object-cover" alt="Profile">
+                </div>
+
+            </div>
+
+
         </section>
+
 
         <!-- RESUME -->
         <section id="resume" class="px-8 py-20">
