@@ -140,4 +140,4 @@ You are free to modify and reuse it for your own portfolio.
 ## ✨ Author
 
 - Munna Khan
-  MERN Stack Developer
+- MERN Stack Developer
